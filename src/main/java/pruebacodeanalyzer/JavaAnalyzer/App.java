@@ -21,11 +21,8 @@ import spoon.reflect.declaration.CtType;
 import spoon.reflect.factory.Factory;
 import spoon.reflect.visitor.filter.TypeFilter;
 
-/**
- * Hello world!
- *
- */
 public class App {
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) {
 		Launcher launcher = new Launcher();
 		launcher.addInputResource("C:\\Users\\FacundoBistolfi\\Downloads\\java\\claseprueba.java");
