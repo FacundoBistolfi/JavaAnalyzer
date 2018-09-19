@@ -21,6 +21,11 @@ import spoon.reflect.declaration.CtType;
 import spoon.reflect.factory.Factory;
 import spoon.reflect.visitor.filter.TypeFilter;
 
+/*
+ * Para calcular la complejidad ciclomatica se suman todos los if, todos los or, todos los
+ * and, todos los while, los for, los foreach y los ternarios y se les suma 1
+ */
+
 public class App {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) {
@@ -108,7 +113,7 @@ public class App {
 					int cantCase = m.getElements(new TypeFilter(CtCase.class)).size();
 					if(cantCase>0) System.out.println("    - Cant CASE: " + cantCase);	
 					cc += cantCase;		
-					System.out.println("  - CC: "+cc);
+					System.out.println("  - Cyclomatic Complexity: "+cc);
 
 			    }
 			    System.out.println("- All fields");
