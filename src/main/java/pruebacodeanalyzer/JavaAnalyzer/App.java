@@ -46,6 +46,7 @@ public class App {
 					//Cantidad Asignaciones
 					int cantAsig = m.getElements(new TypeFilter(CtAssignment.class)).size();
 					if(cantAsig > 0) System.out.println("    - Cant asignaciones: " + cantAsig);
+					
 					//Cantidad de IF
 					ArrayList<CtIf> ifList = (ArrayList<CtIf>) m.getElements(new TypeFilter(CtIf.class));
 					if(ifList.size()>0) {
